@@ -1,0 +1,15 @@
+-- create
+CREATE TABLE STUDENT (
+  student_id INTEGER PRIMARY KEY,
+  name VARCHAR(100),
+  age INTEGER
+);
+
+-- insert
+INSERT INTO STUDENT VALUES (101, 'Clark', 5);
+INSERT INTO STUDENT VALUES (102, 'Dave', 10);
+INSERT INTO STUDENT VALUES (103, 'Ava', 15);
+
+-- fetch 
+SELECT * FROM STUDENT WHERE age = 15 ;
+
