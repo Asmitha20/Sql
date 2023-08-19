@@ -1,0 +1,15 @@
+--CREATE TABLE Student(Student_ID int, Department_Name varchar(50), Student_Age int);
+--INSERT into Student values(1, "ECE", 20);
+--INSERT into Student values(2, "ECE", 21);
+--INSERT into Student values(3, "CCE", 20);
+--INSERT into Student values(4, "CSE", 22);
+--INSERT into Student values(5, "EEE", 21);
+--CREATE TABLE Department(Student_ID int, Student_Name varchar(50), Courses_reg int);
+--INSERT into Department values(1, "Aishwarya", 5);
+--INSERT into Department values(2, "Aparna", 4);
+--INSERT into Department values(3, "Athisha", 5);
+--INSERT into Department values(4, "Bhuvi", 6);
+--INSERT into Department values(5, "Harsha", 5);
+--SELECT * FROM Student;
+--SELECT * FROM Department;
+SELECT Student.Student_ID, Department.Student_Name FROM Student INNER JOIN Department ON Student.Student_ID=Department.Student_ID;
